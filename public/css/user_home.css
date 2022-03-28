@@ -1,0 +1,62 @@
+.mainCard{
+    display: flex;
+    height: 20rem;
+    text-overflow: clip;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#mainCardInnerDiv{
+    transition: all 0.5s ease-in-out;
+}
+
+#mainCardInnerDiv:hover{
+    margin-bottom: 3rem;
+}
+
+#itemImg{
+    height: 10rem;
+    width: 10rem;
+    margin-left: 8rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+#mainItemsBody{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin: 3rem 1.5rem 3rem 1.5rem;
+}
+
+#tooltip-animation{
+    width: max-content;
+}
+
+.row{
+    display: inline-flex;
+    gap: 2rem;
+}
+
+.imgAvatar{
+    background-image: url('https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 60%;
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.texts{
+    gap: 2rem;
+    display: inline-flex;
+    margin-top: 1rem;
+}
+
+#removeItemFromCartBtn{
+    background-color: red;
+}

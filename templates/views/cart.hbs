@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bfb1b9a9a2.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cart.css">
+    <title> Cart </title>
+</head>
+<body>
+
+    <nav>
+        <div class="backbtn" onclick="backFunc()">
+            <i class="fa-solid fa-arrow-left-long fa-xl"></i>
+        </div>
+    </nav>
+
+    <div class="container p-8 mx-auto mt-12 bg-white">
+        <div class="w-full overflow-x-auto">
+            <div class="my-2">
+                <h3 class="text-xl font-bold tracking-wider"> Total Items In Cart : {{cartListLen}} items</h3>
+            </div>
+            <table class="w-full shadow-inner">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="px-6 py-3 font-bold whitespace-nowrap">Product</th>
+                        <th class="px-6 py-3 font-bold whitespace-nowrap">Qty</th>
+                        <th class="px-6 py-3 font-bold whitespace-nowrap">Price</th>
+                        <th class="px-6 py-3 font-bold whitespace-nowrap">Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="userCart">
+                    
+                </tbody>
+            </table>
+            <div class="flex justify-end mt-4 space-x-2">
+                <button class="
+                  px-6
+                  py-3
+                  text-sm text-gray-800
+                  bg-gray-200
+                  hover:bg-gray-400
+                ">
+                    Cannel
+                </button>
+                <button class="
+                  px-6
+                  py-3
+                  text-sm text-white
+                  bg-indigo-500
+                  hover:bg-indigo-600
+                ">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <tr>
+        <td class="p-4 px-6 text-center whitespace-nowrap"></td>
+        <td class="p-4 px-6 text-center whitespace-nowrap">
+            <div class="font-bold">Total Qty - 4</div>
+        </td>
+        <td class="p-4 px-6 font-extrabold text-center whitespace-nowrap">
+        <p id="totalPrice" ></p>
+        </td>
+        <td class="p-4 px-6 text-center whitespace-nowrap">
+            <button class="px-4 py-1 text-red-600 bg-red-100">
+                Clear All
+            </button>
+        </td>
+    </tr>
+    
+
+
+    <script src="js/cart.js" defer></script>
+    <script id="scriptData" data-ID={{currentuserID}}></script>
+    
+</body>
+</html>
